@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <title></title>
+        <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+        <link rel="stylesheet" href="project.css">
+ </head>
+<body>
+    <header>
+         <div class="logo"><span>G</span><span class="color">o</span>lden sun</div>
+        <div id="navbar">
+            <div class="link">
+                <a href="#">our solutions</a>
+                <a href="#">our projects</a>
+                <a href="#">Resources</a>
+                <a href="#">About us</a>
+                <a href="#" class="contact-btn">Contact us</a>
+            </div>
+        </div>
+    </header>
+    <section class="main-banner">
+        <div class="main-content">
+            <h1>We help you go <br>solar in<strike>months</strike></h1>
+            <p>Save more ,live sustainably,and enjoy a brighter future with effortless solar solutions</p>
+        <div class="btn">
+            <button class="calcu">Calculate solar savings</button>
+            <button class="book">Book consultaion</button>
+        </div>
+        </div>
+
+        <div class="home">
+            <img src="IMG-20250619-WA0020[1].jpg" alt="solar house" width="400px">
+        </div>
+
+    </section>
+     
+    <section class="certificate">
+        <p>CERTIFIED BY THE BEST</p>
+        <div class="logos">
+            <img src="Screenshot 2025-06-19 153141.png"width="50"height="60">
+            <img src="Screenshot 2025-06-19 161104.png"width="50"height="60">
+            <img src="Screenshot 2025-06-19 161116.png"width="50"height="60">
+            <img src="Screenshot 2025-06-19 161126.png"width="50"height="60">
+            <img src="Screenshot 2025-06-19 161134.png"width="50"height="60">
+
+        </div>
+    </section><br><br>
+  <section class="calculator-section">
+    <h1>Calculate your solar advantage</h1>
+
+    <div class="tag tag1">Upto ₹78,000 Subsidy</div>
+    <div class="tag tag2">Starting from ₹2000/mo EMI</div>
+    <div class="tag tag3">25 Years Lifespan</div>
+    <div class="tag tag4">10 Years Warranty</div>
+
+    <div class="calculator-form">
+      <form>
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode" placeholder="600028" />
+
+        <label for="property-type">Property Type</label>
+        <select id="property-type">
+          <option>Residential</option>
+          <option>Commercial</option>
+        </select>
+
+        <label for="bill">Average Monthly Electricity Bill</label>
+        <input type="text" id="bill" placeholder="₹ 2500" />
+
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
+  </section>
+
+
+    <section class="exp">
+        <h2>What our clients<br>have to say</h2>
+        <div class="container">
+        <div class="img"> 
+            <video id="testimonialVideo"width="650"height="500" controls autoplay muted poster="WhatsApp Image 2025-06-20 at 22.06.34_5d81cc6e.jpg">
+        <source src="VN20250423_204241.mp4" type="video/mp4">
+        <a href="VN20250423_204241.mp4">Download video</a>
+      </video>
+      <div class="play-button" onclick="document.getElementById('testimonialVideo').play()">
+        
+        </div>
+        </div>
+  
+
+        <div class="text">
+            <div class="stats">
+                <div>
+                    <h3>75%</h3>
+                    <p>Reduction in bills</p>
+                </div>
+                <div>
+                    <h3>2 Days</h3>
+                    <p>Installation Time</p>
+                </div>
+            </div>
+            <p class="para">"Switching to solar with Flarize was the best decision for my home. The team made the entire process seamless, from consultation to installation. Not only have I reduced my electricity bills by nearly 75%, but I also feel great knowing I’m contributing to a sustainable future. Their support team is always available, and the maintenance services are top-notch. Highly recommended!"</p>
+            <p class="author"><b>Rajesh Sharma & Family, Cochin</b></p>
+        </div>
+        </div>
+    </section>
+    <section class="steps-overlap-section">
+  <h2>Go solar in just 3 easy steps</h2>
+
+  <div class="overlap-cards">
+
+    <!-- Card 1 -->
+    <div class="step-card active" onclick="showCard(0)">
+      <h3>1. Free Consultation</h3>
+      <p>Talk to our solar experts for a custom quote.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="step-card" onclick="showCard(1)">
+      <h3>2. Choose Solution</h3>
+      <p>Pick the solar plan that fits your home.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="step-card" onclick="showCard(2)">
+      <h3>3. Install & Save</h3>
+      <p>System installed. You start saving instantly!</p>
+    </div>
+
+  </div>
+</section>
+<script>
+  function showCard(index) {
+    const cards = document.querySelectorAll('.step-card');
+    cards.forEach((card, i) => {
+      
+        card.classList.remove('active');
+        card.style.zIndex = 3 - i;
+      });
+        cards[index].classList.add('active');
+        cards[index].style.zIndex = 999;
+      
+    }
+</script>
+    <section class="hero">
+    <div class="overlay">
+      <div class="form-box">
+        <h1>Book your free consultation</h1>
+        <p>Get expert advice and find your ideal solar solution—no obligations, just savings!</p>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Mobile Number" />
+        <button>Book Now</button>
+      </div>
+    </div>
+  </section>
+    <section class="support">
+        <h2>We help you all the way</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="icon-circle sun"><i class="fa-solid fa-cloud-sun"></i></div>
+                <p>Fastest<br>Installation</p>
+            </div>
+            <div class="feature">
+                <div class="icon-circle blue"><i class="fa-solid fa-calendar"></i></div>
+                <p>10 Year Warrenty<br>period</p>
+            </div>
+            <div class="feature">
+                <div class="icon-circle pink"><i class="fa-solid fa-coins"></i></div>
+                <p>Support with<br>getting Subsidy</p>
+            </div>
+            <div class="feature">
+                <div class="icon-circle orange"><i class="fa-solid fa-credit-card"></i></div>
+                <p>Multiple EMI<br>options</p>
+            </div>
+            <div class="feature">
+                <div class="icon-circle green"><i class="fa-solid fa-wrench"></i></div>
+                <p>Quick Repair &<br>Annual checkups</p>
+            </div>
+        </div>
+    </section>
+    <div class="contain">
+        <h1>Save more with our group<br>purchase scheme!</h1>
+        <p>Join our Group Purchase Scheme and enjoy exclusive discounts when you
+      team up with your neighbours, friends, or community to install solar
+      panels.</p>
+      <button class="button">Talk To Us</button>
+      <div class="featuress">
+        <div class="quality">
+            <div class="feature-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+            <h3>Lower Costs</h3>
+            <p>Bulk purchasing means better pricing for everyone</p>
+        </div>
+        <div class="quality">
+            <div class="feature-icon"><i class="fa-solid fa-list-check"></i></div>
+            <h3>Simplified Process</h3>
+            <p>We handle everything, from<br>consultation to installation.</p>
+        </div>
+        <div class="quality">
+            <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>community Impact</h3>
+            <p>Create a greener, more sustainable neighborhood</p>
+        </div>
+      </div>
+    </div>
+    <section class="sect">
+        <div class="sen">
+            <h3>Have any questions?</h3>
+            <p>Get expert advice and find your ideal solar solutions-<br>no obligations,just savings!S</p>
+        </div>
+        <div class="list">
+            <details><summary>What maintenance is required for solar panels?</summary></details>
+            <details><summary>Can I run my home completely on solar power?</summary></details>
+            <details><summary>What is the lifespan of solar panels?</summary></details>
+            <details><summary>How long does it take to install a solar system?</summary></details>
+            <details><summary>What is the cost of installing solar panels at home?</summary></details>
+            <details><summary>How much can I save by switching to solar?</summary></details>
+            <details><summary>What happens during a power outage?</summary></details
+        </div></div>
+    </section>
+    <section class="partner">
+        <h2>Our partners in action</h2>
+        <div class="partner-logos">
+            <img src="WhatsApp Image 2025-06-20 at 19.38.20_36aff172.jpg">
+            <img src="WhatsApp Image 2025-06-20 at 19.38.20_0c112f42.jpg">
+            <img src="WhatsApp Image 2025-06-20 at 19.38.20_a703f4af.jpg">
+            <img src="WhatsApp Image 2025-06-20 at 19.38.21_7e81359a.jpg">
+            <img src="WhatsApp Image 2025-06-20 at 19.38.21_bf0bd638.jpg">
+            <img src="WhatsApp Image 2025-06-20 at 19.38.21_efd41e85.jpg">
+        </div>
+    </section>
+    <section class="join-secti">
+        <div class="join-left">
+            <h2>Ready to go <br>solar with us?</h2>
+            <p>We're just a message away!</p>
+        </div>
+            <div class="join-form">
+                <input type="text" placeholder="Name"required>
+                <input type="number" placeholder="Mobile Number"required>
+                <button type="submit">Book Now</button>
+            
+            </div>
+    </section>
+   <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <h2 class="logo">GOLDEN <span>RAY</span></h2>
+        <p>Golden Ray is a company working to bring accessible energy to everyone. Our mission is to empower people to be in charge of their own power</p>
+        <div class="social-icons">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" />
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <p>Our Solutions</p>
+          <p>Our Projects</p>
+          <p>Resources</p>
+          <p>About Us</p>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <p>FAQs</p>
+          <p>Blogs</p>
+          <p>Newsletters</p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <p>Cookie Policy</p>
+          <p>Legal Policy</p>
+          <p>Terms of Service</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Goldenray All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
